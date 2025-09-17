@@ -1,0 +1,26 @@
+public class MaiorMenor
+{
+    public static void main(String[] args)
+    {
+        int[] numeros = {12, 45, 7, 36, 3, 10, 22, 43, 5, 47};
+
+        int maior = numeros[0];
+        int menor = numeros[0];
+
+        for (int i = 1; i < numeros.length; i++)
+        {
+            if (numeros[i] > maior)
+            {
+                maior = numeros[i];
+            }
+
+            if (numeros[i] < menor)
+            {
+                menor = numeros[i];
+            }
+        }
+
+        System.out.println("\nMaior valor: " + maior);
+        System.out.println("Menor valor: " + menor);
+    }
+}
